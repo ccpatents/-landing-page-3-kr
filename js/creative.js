@@ -17,12 +17,11 @@ let ps_selected = false; // '특허 검색 왜..?'
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
       //mobile
       document.getElementById("share-button").style.display = "block";
-      document.getElementById("store-button").style.display = "none";
+      document.getElementById("store-button2").style.display = "none";
       document.getElementById("win10_warn").style.display = "block";
     } else {
       //pc 
       document.getElementById("store-button1").style.display = "block";
-      document.getElementById("store-button2").style.display = "block";
     }
   }
 
