@@ -22,6 +22,7 @@ let ps_selected = false; // '특허 검색 왜..?'
     } else {
       //pc 
       document.getElementById("store-button1").style.display = "block";
+      document.getElementById("store-button2").style.display = "block";
     }
   }
 
