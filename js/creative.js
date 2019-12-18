@@ -21,7 +21,7 @@ let ps_selected = false; // '특허 검색 왜..?'
       document.getElementById("win10_warn").style.display = "block";
     } else {
       //pc 
-      document.getElementById("download-button").style.display = "block";
+      document.getElementById("store-button1").style.display = "block";
     }
   }
 
@@ -110,7 +110,24 @@ let ps_selected = false; // '특허 검색 왜..?'
     WebShare();
   }
 
-  document.getElementById('store-button').onclick = function () {
+  document.getElementById('store-button1').onclick = function () {
+    let gtag_ignore = true;
+
+    if (agent.indexOf("windows nt 10.0") != -1) {
+      gtag_ignore = false;
+    } else {
+      alert("윈도우10에서만 지원됩니다.");
+    }
+
+    if (!store_event && !gtag_ignore) {
+      gtag('event', 'click_store', {
+        'event_category': 'button'
+      });
+    }
+    store_event = true;
+  }
+
+  document.getElementById('store-button2').onclick = function () {
     let gtag_ignore = true;
 
     if (agent.indexOf("windows nt 10.0") != -1) {
