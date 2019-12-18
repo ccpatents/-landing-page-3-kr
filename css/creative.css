@@ -10895,7 +10895,7 @@ header.masthead .btn-red:hover {
 
 header.masthead b {
   color: #f8f9fa;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 2rem;
   padding: 0.3rem 1.5rem;
   opacity: 0.8;
