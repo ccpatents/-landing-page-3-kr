@@ -10894,8 +10894,7 @@ header.masthead .btn-red:hover {
 }
 
 header.masthead b {
-  color: #fff;
-  background-color: rgba(0, 127, 255, 0.75);
+  color: rgba(0, 127, 255, 0.75);
   font-weight: bold;
   border-radius: 2rem;
   padding: 0.3rem 1.5rem;
@@ -11485,4 +11484,3 @@ header.masthead #scroll-down i {
   font-size: 20px;
   padding: 10px 15px !important;
 }
-/*# sourceMappingURL=creative.css.map */
