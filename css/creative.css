@@ -10834,8 +10834,8 @@ hr.light {
 
 header.masthead {
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 34, 34, 0.6)), to(rgba(36, 34, 34, 0.6))), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/jU0kuatPUhcXyBUlnxBEwoC-rehvIBy3wCEwYBhgL/s1600/bg-mast.gif");
-  background: linear-gradient(to bottom, rgba(36, 34, 34, 0.6) 0%, rgba(36, 34, 34, 0.6) 100%), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/jU0kuatPUhcXyBUlnxBEwoC-rehvIBy3wCEwYBhgL/s1600/bg-mast.gif");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 34, 34, 0.6)), to(rgba(36, 34, 34, 0.6))), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/4u9uAnky_w4uXEOJg-bByRliGBKOHOpJgCLcBGAsYHQ/s1600/bg-mast.gif");
+  background: linear-gradient(to bottom, rgba(36, 34, 34, 0.6) 0%, rgba(36, 34, 34, 0.6) 100%), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/4u9uAnky_w4uXEOJg-bByRliGBKOHOpJgCLcBGAsYHQ/s1600/bg-mast.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10897,7 +10897,7 @@ header.masthead b {
   color: #fff;
   background-color: rgba(0, 127, 255, 0.75);
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 2rem;
   padding: 1px 1px 2px 1px;
   opacity: 0.8;
 }
