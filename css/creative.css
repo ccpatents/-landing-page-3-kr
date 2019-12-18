@@ -11033,6 +11033,7 @@ header.masthead #scroll-down i {
 #features p {
   font-size: 1.1rem;
   margin: .2rem;
+  font-style: italic;
 }
 
 #features .row div {
