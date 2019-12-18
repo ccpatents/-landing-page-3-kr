@@ -11052,6 +11052,20 @@ header.masthead #scroll-down i {
   }
 }
 
+@media (min-width: 768px) {
+  #features .shadow-left {
+    -webkit-box-shadow: -15px 10px 10px rgba(163, 163, 163, 0.7);
+            box-shadow: -15px 10px 10px rgba(163, 163, 163, 0.7);
+  }
+}
+
+@media (min-width: 768px) {
+  #features .shadow-right {
+    -webkit-box-shadow: 15px 10px 10px rgba(163, 163, 163, 0.7);
+            box-shadow: 15px 10px 10px rgba(163, 163, 163, 0.7);
+  }
+}
+
 #blog {
   margin-top: 0.35rem;
   font-family: 'Gothic+A1', sans-serif;
