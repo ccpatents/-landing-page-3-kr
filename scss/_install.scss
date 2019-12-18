@@ -1,11 +1,7 @@
 #install {
     overflow: hidden;
-    font-family: 'Gothic+A1', sans-serif;
     color: #454545;
     word-break: keep-all;
-
-    background-image: url('https://1.bp.blogspot.com/-VHB4iAs11A4/XdKECk5GCkI/AAAAAAAAHMA/Bw5IYcni3fU59IKHI7x6ssnykqTj8y33ACLcBGAsYHQ/s1600/bg.png');
-    background-repeat: repeat;
 
     h2,
     h3,
@@ -15,7 +11,7 @@
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: $dark;
     }
 
@@ -35,7 +31,7 @@
 
     @include media-breakpoint-down(sm) {
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 }

@@ -94,6 +94,8 @@ let ps_selected = false; // '특허 검색 왜..?'
     }
   });
 
+  AOS.init();
+
   $('.popup-img').popupimg();
 
   //document.querySelector('#share').addEventListener('click', WebShare);

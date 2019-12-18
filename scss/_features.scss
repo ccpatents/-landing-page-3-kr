@@ -1,28 +1,6 @@
 #features {
 	word-break: keep-all;
-	background-image: url('https://1.bp.blogspot.com/-VHB4iAs11A4/XdKECk5GCkI/AAAAAAAAHMA/Bw5IYcni3fU59IKHI7x6ssnykqTj8y33ACLcBGAsYHQ/s1600/bg.png');
-	background-repeat: repeat;
 	color: $dark;
-
-	.container-fluid {
-		padding-top: 1.7rem;
-
-		@media (min-width: 768px) {
-			padding: 2rem 0;
-		}
-
-		@media (min-width: 992px) {
-			padding: 2rem 3rem;
-		}
-
-		@media (min-width: 1200px) {
-			padding: 2rem 1rem;
-		}
-
-		@media (min-width: 1500px) {
-			padding: 2rem 10rem;
-		}
-	}
 
 	b {
 		background-color: $gold;
@@ -40,7 +18,7 @@
 		margin: .2rem;
 	}
 
-	div {
+	.row div {
 		margin-bottom: 3rem;
 	}
 

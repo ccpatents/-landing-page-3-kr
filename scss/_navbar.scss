@@ -48,8 +48,8 @@
       .download {
         color: $white !important;
         background-color: #1473e6;
-        padding: .5rem 1.2rem !important;
-        border-radius: 1.5rem;
+        padding: .3rem 1.2rem !important;
+        border-radius: 2rem;
 
         &:hover {
           background-color: #0d66d0 !important;
@@ -116,14 +116,10 @@
           .download {
             color: $white !important;
             background-color: #1473e6;
-            padding: .5rem 1.2rem !important;
-            border-radius: 1.5rem;
+            padding: .3rem 1.2rem !important;
+            border-radius: 2rem;
 
             &:hover {
-              background-color: #0d66d0 !important;
-            }
-
-            &.active {
               background-color: #0d66d0 !important;
             }
           }
