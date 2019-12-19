@@ -10,7 +10,7 @@ let ps_selected = false; // '특허 검색 왜..?'
 (function ($) {
   "use strict"; // Start of use strict
 
-  let agent = navigator.userAgent.toLowerCase();
+  let win_10 = navigator.userAgent.indexOf("Windows NT 10.0") ? true : false;
 
   let filter = "win32|win64";
   if (navigator.platform) {
@@ -111,7 +111,7 @@ let ps_selected = false; // '특허 검색 왜..?'
   document.getElementById('store-button1').onclick = function () {
     let gtag_ignore = true;
 
-    if (agent.indexOf("windows nt 10.0") != -1) {
+    if (win_10) {
       gtag_ignore = false;
     } else {
       alert("윈도우10에서만 지원됩니다.");
@@ -128,7 +128,7 @@ let ps_selected = false; // '특허 검색 왜..?'
   document.getElementById('store-button2').onclick = function () {
     let gtag_ignore = true;
 
-    if (agent.indexOf("windows nt 10.0") != -1) {
+    if (win_10) {
       gtag_ignore = false;
     } else {
       alert("윈도우10에서만 지원됩니다.");
@@ -153,6 +153,22 @@ let ps_selected = false; // '특허 검색 왜..?'
     }
     semi_download_event = true;
   }
+
+  setTimeout(function () {
+    if(win_10) {
+      gtag('event', 'timeout_10s_pc', {
+        'event_category': 'timeout'
+      });
+    }
+  }, 10000);
+
+  setTimeout(function () {
+    if(win_10) {
+      gtag('event', 'timeout_25s_pc', {
+        'event_category': 'timeout'
+      });
+    }
+  }, 25000);
 
   setTimeout(function () {
     gtag('event', 'timeout_45s', {
