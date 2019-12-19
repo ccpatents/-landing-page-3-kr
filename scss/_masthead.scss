@@ -8,11 +8,15 @@ header.masthead {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: auto 100%;
+  background-size: 100% auto;
 
   @include media-breakpoint-down(sm) {
     background: linear-gradient(to bottom, #{fade-out($secondary, .4)} 0%, #{fade-out($secondary, .4)} 100%),
     url('https://1.bp.blogspot.com/-Xsnk0lQGhC4/Xfap0STdEyI/AAAAAAAAHfY/8_gWx05QTEssYlH1HtJHIqA4Hu9K1OmjACLcBGAsYHQ/s1600/bg-masterhead3.jpg');
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: auto 100%;
   }
 
   h1 {
