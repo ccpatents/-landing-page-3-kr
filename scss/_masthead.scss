@@ -60,12 +60,16 @@ header.masthead {
     }
   }
 
-  b {
+  bw {
     color: $gray-100;
     font-weight: 500;
-    border-radius: 2rem;
-    padding: 0.3rem 1.5rem;
-    opacity: 0.8;
+    opacity: 0.85;
+  }
+
+  b {
+    color: $white;
+    background-color: #328ff2;
+    opacity: 0.85;
   }
 
   span {
