@@ -11340,7 +11340,7 @@ header.masthead #scroll-down i {
 }
 
 #install p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #555555;
 }
 
@@ -11361,6 +11361,12 @@ header.masthead #scroll-down i {
 @media (max-width: 767.98px) {
   #install p {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #install p {
+    font-size: 1rem;
   }
 }
 
