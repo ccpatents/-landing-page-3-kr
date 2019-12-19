@@ -38,14 +38,14 @@
 	}
 
 	.shadow-left {
-		@include media-breakpoint-up(md) {
+		//@include media-breakpoint-up(md) {
 			box-shadow: -15px 10px 10px rgba(163, 163, 163, 0.7);
-		}
+		//}
 	}
 
 	.shadow-right {
-		@include media-breakpoint-up(md) {
+		//@include media-breakpoint-up(md) {
 			box-shadow: 15px 10px 10px rgba(163, 163, 163, .7);
-		}
+		//}
 	}
 }
