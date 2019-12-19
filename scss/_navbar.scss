@@ -58,7 +58,7 @@
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
     box-shadow: none;
     background-color: transparent;

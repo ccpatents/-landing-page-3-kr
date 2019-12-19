@@ -10782,7 +10782,7 @@ hr.light {
   background-color: #0d66d0 !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mainNav {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -10860,8 +10860,7 @@ header.masthead h2 {
 }
 
 header.masthead p {
-  font-size: 1.2rem;
-  font-family: 'Gothic+A1', sans-serif;
+  font-size: 0.95rem;
   color: white;
   padding-bottom: .5rem;
   margin-bottom: 0;
@@ -10958,10 +10957,7 @@ header.masthead #scroll-down i {
     font-size: 2.5rem;
   }
   header.masthead h2 {
-    font-size: 1.3rem;
-  }
-  header.masthead p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -10972,9 +10968,6 @@ header.masthead #scroll-down i {
     padding-top: 72px;
     padding-bottom: 0;
   }
-  header.masthead p {
-    font-size: 1.3;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -10983,9 +10976,6 @@ header.masthead #scroll-down i {
   }
   header.masthead h2 {
     font-size: 1.8rem;
-  }
-  header.masthead p {
-    font-size: 1.5rem;
   }
 }
 
