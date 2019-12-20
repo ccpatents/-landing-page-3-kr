@@ -12,7 +12,8 @@ let win_10 = false;
 (function ($) {
   "use strict"; // Start of use strict
 
-  win_10 = navigator.userAgent.indexOf("Windows NT 10.0") ? true : false;
+  let ua = navigator.userAgent;
+  win_10 = (ua.indexOf("Windows NT 10.0") != -1 || ua.indexOf("Windows NT 6.4") != -1) ? true : false;
 
   let filter = "win32|win64";
   if (navigator.platform) {
