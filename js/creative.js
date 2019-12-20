@@ -7,10 +7,12 @@ let semi_download_event = false;
 let ss_selected = true; // '왜 검색식을..?'
 let ps_selected = false; // '특허 검색 왜..?'
 
+let win_10 = false;
+
 (function ($) {
   "use strict"; // Start of use strict
 
-  let win_10 = navigator.userAgent.indexOf("Windows NT 10.0") ? true : false;
+  win_10 = navigator.userAgent.indexOf("Windows NT 10.0") ? true : false;
 
   let filter = "win32|win64";
   if (navigator.platform) {
