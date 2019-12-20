@@ -4,7 +4,7 @@ header.masthead {
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
   background: linear-gradient(to bottom, #{fade-out(#242222, .4)} 0%, #{fade-out(#242222, .4)} 100%),
-  url('https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/4u9uAnky_w4uXEOJg-bByRliGBKOHOpJgCLcBGAsYHQ/s1600/bg-mast.gif');
+  url('https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -15,8 +15,8 @@ header.masthead {
     url('https://1.bp.blogspot.com/-Xsnk0lQGhC4/Xfap0STdEyI/AAAAAAAAHfY/8_gWx05QTEssYlH1HtJHIqA4Hu9K1OmjACLcBGAsYHQ/s1600/bg-masterhead3.jpg');
   }
 
-  @include media-breakpoint-up(lg) {
-    background-size: auto 100%;
+  @include media-breakpoint-up(xl) {
+    background-size: auto 115%;
   }
 
   h1 {
@@ -87,22 +87,6 @@ header.masthead {
 
   .popup-img {
     width: 100%;
-    opacity: 1;
-
-    @include media-breakpoint-up(sm) {
-      width: 100%;
-      opacity: .87;
-    }
-
-    @include media-breakpoint-up(lg) {
-      height: 100%;
-      opacity: .87;
-    }
-
-    @include media-breakpoint-up(xl) {
-      height: auto;
-      opacity: .87;
-    }
   }
 
   #scroll-down {

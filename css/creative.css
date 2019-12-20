@@ -10874,8 +10874,8 @@ hr.light {
 
 header.masthead {
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 34, 34, 0.6)), to(rgba(36, 34, 34, 0.6))), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/4u9uAnky_w4uXEOJg-bByRliGBKOHOpJgCLcBGAsYHQ/s1600/bg-mast.gif");
-  background: linear-gradient(to bottom, rgba(36, 34, 34, 0.6) 0%, rgba(36, 34, 34, 0.6) 100%), url("https://1.bp.blogspot.com/-Hp-lnATWKYo/XfoC4prQKZI/AAAAAAAAHjM/4u9uAnky_w4uXEOJg-bByRliGBKOHOpJgCLcBGAsYHQ/s1600/bg-mast.gif");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 34, 34, 0.6)), to(rgba(36, 34, 34, 0.6))), url("https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif");
+  background: linear-gradient(to bottom, rgba(36, 34, 34, 0.6) 0%, rgba(36, 34, 34, 0.6) 100%), url("https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10889,9 +10889,9 @@ header.masthead {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   header.masthead {
-    background-size: auto 100%;
+    background-size: auto 115%;
   }
 }
 
@@ -10961,28 +10961,6 @@ header.masthead h1 {
 
 header.masthead .popup-img {
   width: 100%;
-  opacity: 1;
-}
-
-@media (min-width: 576px) {
-  header.masthead .popup-img {
-    width: 100%;
-    opacity: .87;
-  }
-}
-
-@media (min-width: 992px) {
-  header.masthead .popup-img {
-    height: 100%;
-    opacity: .87;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.masthead .popup-img {
-    height: auto;
-    opacity: .87;
-  }
 }
 
 header.masthead #scroll-down {
@@ -11383,7 +11361,7 @@ header.masthead #scroll-down i {
 }
 
 #contact p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #555555;
 }
 
@@ -11521,9 +11499,6 @@ header.masthead #scroll-down i {
   #contact {
     padding: 6em 0;
   }
-  #contact p {
-    font-size: 1.1rem;
-  }
 }
 
 #contact .img,
@@ -11538,3 +11513,4 @@ header.masthead #scroll-down i {
   font-size: 20px;
   padding: 10px 15px !important;
 }
+/*# sourceMappingURL=creative.css.map */
