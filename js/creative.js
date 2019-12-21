@@ -12,10 +12,10 @@ let win_10 = false;
 (function ($) {
   "use strict"; // Start of use strict
 
-  let ua = navigator.userAgent;
-  win_10 = (ua.indexOf("Windows NT 10.0") != -1 || ua.indexOf("Windows NT 6.4") != -1) ? true : false;
+  let ua = navigator.userAgent.toLowerCase();
+  win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1) ? true : false;
 
-  let filter = "win32|win64";
+  let filter = "win32|win64|mac";
   if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
       //mobile
