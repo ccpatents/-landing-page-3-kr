@@ -10814,7 +10814,7 @@ hr.light {
 #mainNav .navbar-nav .nav-item .download {
   color: #fff !important;
   background-color: #1473e6;
-  padding: .3rem 1.2rem !important;
+  padding: .4rem 1.2rem !important;
   border-radius: 2rem;
 }
 
@@ -10864,7 +10864,7 @@ hr.light {
   #mainNav.navbar-scrolled .navbar-nav .nav-item .download {
     color: #fff !important;
     background-color: #1473e6;
-    padding: .3rem 1.2rem !important;
+    padding: .4rem 1.2rem !important;
     border-radius: 2rem;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .download:hover {
