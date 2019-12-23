@@ -10880,23 +10880,6 @@ header.masthead {
   overflow: hidden;
 }
 
-@media (max-width: 767.98px) {
-  header.masthead {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.6)), to(rgba(85, 85, 85, 0.6))), url("../img/m_bg.jpg");
-    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.6) 0%, rgba(85, 85, 85, 0.6) 100%), url("../img/m_bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.masthead {
-    background-size: auto 110%;
-  }
-}
-
 header.masthead h1 {
   font-size: 3rem;
 }
@@ -11011,6 +10994,11 @@ header.masthead .overlay {
 
 @media (max-width: 767.98px) {
   header.masthead {
+    /*background-image: url('../img/m_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;*/
     padding-top: 6.5rem !important;
   }
   header.masthead h1 {
@@ -11018,9 +11006,6 @@ header.masthead .overlay {
   }
   header.masthead h2 {
     font-size: 1.5rem;
-  }
-  header.masthead video {
-    display: none;
   }
 }
 

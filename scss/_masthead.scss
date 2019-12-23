@@ -8,19 +8,6 @@ header.masthead {
   width: 100%;
   overflow: hidden;
 
-  @include media-breakpoint-down(sm) {
-    background: linear-gradient(to bottom, #{fade-out($secondary, .4)} 0%, #{fade-out($secondary, .4)} 100%),
-    url('../img/m_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-  }
-
-  @include media-breakpoint-up(xl) {
-    background-size: auto 110%;
-  }
-
   h1 {
     font-size: 3rem;
   }
@@ -139,6 +126,12 @@ header.masthead {
   }
 
   @include media-breakpoint-down(sm) {
+    /*background-image: url('../img/m_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;*/
+
     padding-top: 6.5rem !important;
 
     h1 {
@@ -150,7 +143,7 @@ header.masthead {
     }
 
     video {
-      display: none;
+      //display: none;
     }
   }
 
