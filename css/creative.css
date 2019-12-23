@@ -10998,9 +10998,11 @@ header.masthead .overlay {
   }
   header.masthead h1 {
     font-size: 2.5rem;
+    opacity: .65;
   }
   header.masthead h2 {
     font-size: 1.5rem;
+    opacity: .65;
   }
 }
 
