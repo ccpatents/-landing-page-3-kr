@@ -10874,12 +10874,10 @@ hr.light {
 
 header.masthead {
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 34, 34, 0.6)), to(rgba(36, 34, 34, 0.6))), url("https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif");
-  background: linear-gradient(to bottom, rgba(36, 34, 34, 0.6) 0%, rgba(36, 34, 34, 0.6) 100%), url("https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 100% auto;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 767.98px) {
@@ -10891,7 +10889,7 @@ header.masthead {
 
 @media (min-width: 1200px) {
   header.masthead {
-    background-size: auto 115%;
+    background-size: auto 110%;
   }
 }
 
@@ -10977,6 +10975,36 @@ header.masthead #scroll-down i {
   font-size: 18px;
 }
 
+header.masthead video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: auto;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header.masthead .container,
+header.masthead .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #242222;
+  opacity: 0.4;
+  z-index: 1;
+}
+
 @media (max-width: 767.98px) {
   header.masthead {
     padding-top: 6.5rem !important;
@@ -10986,6 +11014,9 @@ header.masthead #scroll-down i {
   }
   header.masthead h2 {
     font-size: 1.5rem;
+  }
+  header.masthead video {
+    display: none;
   }
 }
 
@@ -11004,6 +11035,12 @@ header.masthead #scroll-down i {
   }
   header.masthead h2 {
     font-size: 1.8rem;
+  }
+  header.masthead video {
+    min-width: auto;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
   }
 }
 

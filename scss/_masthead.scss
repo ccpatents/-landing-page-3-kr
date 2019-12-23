@@ -3,12 +3,10 @@ header.masthead {
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background: linear-gradient(to bottom, #{fade-out(#242222, .4)} 0%, #{fade-out(#242222, .4)} 100%),
-  url('https://1.bp.blogspot.com/-cB8tzOhsKNo/XfwV_j5KUJI/AAAAAAAAHk4/ZdcOhBmerU0asHpQuq2gtYXKINdkbQUlgCLcBGAsYHQ/s1600/bg-mast-3.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 100% auto;
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  overflow: hidden;
 
   @include media-breakpoint-down(sm) {
     background: linear-gradient(to bottom, #{fade-out($secondary, .4)} 0%, #{fade-out($secondary, .4)} 100%),
@@ -16,7 +14,7 @@ header.masthead {
   }
 
   @include media-breakpoint-up(xl) {
-    background-size: auto 115%;
+    background-size: auto 110%;
   }
 
   h1 {
@@ -39,8 +37,8 @@ header.masthead {
   .btn {
     &:focus {
       outline: none !important;
-      -webkit-box-shadow: none!important;
-      box-shadow: none!important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
     }
   }
 
@@ -103,6 +101,39 @@ header.masthead {
     }
   }
 
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container,
+  .container-fluid {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    //background-color: linear-gradient(to bottom, #{fade-out(#242222, .4)} 0%, #{fade-out(#242222, .4)} 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #242222;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
   @include media-breakpoint-down(sm) {
     padding-top: 6.5rem !important;
 
@@ -113,6 +144,10 @@ header.masthead {
     h2 {
       font-size: 1.5rem;
     }
+
+    video {
+      display: none;
+    }
   }
 
   @include media-breakpoint-up(lg) {
@@ -122,6 +157,8 @@ header.masthead {
     padding-bottom: 0;
   }
 
+  
+
   @include media-breakpoint-up(xl) {
     h1 {
       font-size: 3.3rem;
@@ -129,6 +166,13 @@ header.masthead {
 
     h2 {
       font-size: 1.8rem;
+    }
+
+    video {
+      min-width: auto;
+      min-height: 100%;
+      width: auto;
+      height: 100%;
     }
   }
 }
