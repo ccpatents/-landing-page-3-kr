@@ -10994,11 +10994,6 @@ header.masthead .overlay {
 
 @media (max-width: 767.98px) {
   header.masthead {
-    /*background-image: url('../img/m_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;*/
     padding-top: 6.5rem !important;
   }
   header.masthead h1 {

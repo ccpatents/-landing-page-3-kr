@@ -126,12 +126,6 @@ header.masthead {
   }
 
   @include media-breakpoint-down(sm) {
-    /*background-image: url('../img/m_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;*/
-
     padding-top: 6.5rem !important;
 
     h1 {
@@ -140,10 +134,6 @@ header.masthead {
 
     h2 {
       font-size: 1.5rem;
-    }
-
-    video {
-      //display: none;
     }
   }
 
