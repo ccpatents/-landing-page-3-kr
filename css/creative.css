@@ -10882,8 +10882,12 @@ header.masthead {
 
 @media (max-width: 767.98px) {
   header.masthead {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.6)), to(rgba(85, 85, 85, 0.6))), url("https://1.bp.blogspot.com/-Xsnk0lQGhC4/Xfap0STdEyI/AAAAAAAAHfY/8_gWx05QTEssYlH1HtJHIqA4Hu9K1OmjACLcBGAsYHQ/s1600/bg-masterhead3.jpg");
-    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.6) 0%, rgba(85, 85, 85, 0.6) 100%), url("https://1.bp.blogspot.com/-Xsnk0lQGhC4/Xfap0STdEyI/AAAAAAAAHfY/8_gWx05QTEssYlH1HtJHIqA4Hu9K1OmjACLcBGAsYHQ/s1600/bg-masterhead3.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.6)), to(rgba(85, 85, 85, 0.6))), url("../img/m_bg.jpg");
+    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.6) 0%, rgba(85, 85, 85, 0.6) 100%), url("../img/m_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
 
