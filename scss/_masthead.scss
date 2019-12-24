@@ -138,6 +138,10 @@ header.masthead {
       font-size: 1.5rem;
     }
 
+    .overlay{
+      background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgb(221, 221, 221));
+    }
+
     video {
       position: relative;
       margin-top: 10rem;
