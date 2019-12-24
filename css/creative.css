@@ -11004,10 +11004,6 @@ header.masthead .overlay {
   header.masthead h2 {
     font-size: 1.5rem;
   }
-  header.masthead .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#dddddd));
-    background-image: linear-gradient(to bottom, #141414, #dddddd);
-  }
   header.masthead video {
     position: relative;
     margin-top: 10rem;
