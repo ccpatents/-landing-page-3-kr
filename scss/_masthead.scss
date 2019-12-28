@@ -7,22 +7,24 @@ header.masthead {
   background-color: $white;
   width: 100%;
   overflow: hidden;
+  color: $white;
 
   h1 {
     font-size: 3rem;
+    text-shadow: 5px 3px 3px rgba(68, 68, 68, 0.75);
   }
 
   h2 {
     font-weight: 800;
-    color: white;
     font-size: 1.7rem;
+    text-shadow: 5px 3px 3px rgba(68, 68, 68, 0.75);
   }
 
   p {
     font-size: 0.95rem;
-    color: white;
     padding-bottom: .5rem;
     margin-bottom: 0;
+    text-shadow: 1px 1px 1px black;
   }
 
   .btn {
@@ -67,11 +69,6 @@ header.masthead {
 
   span {
     font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 2.25rem;
-    font-weight: bold;
   }
 
   .popup-img {
@@ -139,7 +136,8 @@ header.masthead {
     }
 
     .overlay {
-      background-image: url('../img/m_bg.jpg');
+      background: linear-gradient(to bottom, #{fade-out($secondary, .5)} 0%, #{fade-out($secondary, .5)} 100%), url('../img/m_bg.jpg');
+      //background-image: url('../img/m_bg.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
