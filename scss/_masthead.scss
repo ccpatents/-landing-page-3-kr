@@ -1,5 +1,6 @@
 // Styling for the masthead
 header.masthead {
+  min-height: 60vh;
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
@@ -123,7 +124,6 @@ header.masthead {
   }
 
   @include media-breakpoint-down(sm) {
-    min-height: 45rem;
     padding-top: 6.5rem !important;
     padding-bottom: 2rem;
 
@@ -154,7 +154,7 @@ header.masthead {
     }
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     height: 70vh;
     min-height: 40rem;
     padding-top: $navbar-height;

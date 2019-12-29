@@ -10876,6 +10876,7 @@ hr.light {
 }
 
 header.masthead {
+  min-height: 60vh;
   padding-bottom: calc(10rem - 75px);
   position: relative;
   background-color: #fff;
@@ -10994,7 +10995,6 @@ header.masthead .overlay {
 
 @media (max-width: 767.98px) {
   header.masthead {
-    min-height: 45rem;
     padding-top: 6.5rem !important;
     padding-bottom: 2rem;
   }
@@ -11022,7 +11022,7 @@ header.masthead .overlay {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header.masthead {
     height: 70vh;
     min-height: 40rem;
