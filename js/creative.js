@@ -19,7 +19,7 @@ let win_10 = false;
   if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
       //mobile
-      document.getElementById("share-button").style.display = "block";
+      document.getElementById("share-button").style.display = "inline-block";
       document.getElementById("store-area2").style.display = "none";
       document.getElementById("win10_warn").style.display = "block";
     } else {
@@ -101,7 +101,7 @@ let win_10 = false;
   //$('.popup-img').popupimg();
 
   //document.querySelector('#share').addEventListener('click', WebShare);
-  document.getElementById('share').onclick = function () {
+  /*document.getElementById('share').onclick = function () {
     if (!share_event) {
       gtag('event', 'share', {
         'event_category': 'button'
@@ -110,6 +110,15 @@ let win_10 = false;
     }
 
     WebShare();
+  }*/
+
+  document.getElementById('socials').onclick = function () {
+    if (!share_event) {
+      gtag('event', 'share', {
+        'event_category': 'button'
+      });
+      share_event = true;
+    }
   }
 
   document.getElementById('store-button1').onclick = function () {
