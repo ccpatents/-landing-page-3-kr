@@ -4,9 +4,6 @@ let enlarge_event = false;
 let store_event = false;
 let semi_download_event = false;
 
-let ss_selected = true; // '왜 검색식을..?'
-let ps_selected = false; // '특허 검색 왜..?'
-
 let win_10 = false;
 
 let bg_video = document.getElementById("bg_video");
@@ -203,7 +200,7 @@ let bg_video = document.getElementById("bg_video");
 })(jQuery); // End of use strict
 
 
-async function WebShare() {
+/*async function WebShare() {
   if (navigator.share === undefined) {
     return;
   }
@@ -220,7 +217,7 @@ async function WebShare() {
   } catch (error) {
     return;
   }
-}
+}*/
 
 function resize_width() {
   let width = window.innerWidth;
