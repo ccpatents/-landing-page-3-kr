@@ -35,7 +35,7 @@ let bg_video = document.getElementById("bg_video");
         objectType: 'feed',
         content: {
           title: 'CCPatents',
-          description: '#특허 #검색식 #완성 #도우미',
+          description: '#특허 검색식 #완성 도우미',
           imageUrl: 'https://kr.ccpatents.net/icon.png',
           link: {
             mobileWebUrl: 'https://kr.ccpatents.net',
@@ -54,13 +54,6 @@ let bg_video = document.getElementById("bg_video");
               webUrl: 'https://kr.ccpatents.net'
             }
           },
-          {
-            title: '앱으로 보기',
-            link: {
-              mobileWebUrl: 'https://kr.ccpatents.net',
-              webUrl: 'https://kr.ccpatents.net'
-            }
-          }
         ]
       });
 
