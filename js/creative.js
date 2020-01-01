@@ -27,6 +27,43 @@ let bg_video = document.getElementById("bg_video");
   let filter = "win32|win64|mac";
   if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('5e27a7316193f718575986dcfa86666f');
+      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+      Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'feed',
+        content: {
+          title: 'CCPatents',
+          description: '#특허 #검색식 #완성 #도우미',
+          imageUrl: 'https://kr.ccpatents.net/icon.png',
+          link: {
+            mobileWebUrl: 'https://kr.ccpatents.net',
+            webUrl: 'https://kr.ccpatents.net'
+          }
+        },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845
+        },
+        buttons: [{
+            title: '웹으로 보기',
+            link: {
+              mobileWebUrl: 'https://kr.ccpatents.net',
+              webUrl: 'https://kr.ccpatents.net'
+            }
+          },
+          {
+            title: '앱으로 보기',
+            link: {
+              mobileWebUrl: 'https://kr.ccpatents.net',
+              webUrl: 'https://kr.ccpatents.net'
+            }
+          }
+        ]
+      });
+
       //mobile
       document.getElementById("share-button").style.display = "inline-block";
       document.getElementById("store-area2").style.display = "none";
@@ -121,14 +158,14 @@ let bg_video = document.getElementById("bg_video");
     WebShare();
   }*/
 
-  document.getElementById('socials').onclick = function () {
+  /*document.getElementById('socials').onclick = function () {
     if (!share_event) {
       gtag('event', 'share', {
         'event_category': 'button'
       });
       share_event = true;
     }
-  }
+  }*/
 
   document.getElementById('store-button1').onclick = function () {
     let gtag_ignore = true;
