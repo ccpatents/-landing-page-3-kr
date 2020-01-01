@@ -12,6 +12,12 @@ let win_10 = false;
 (function ($) {
   "use strict"; // Start of use strict
 
+  let width = window.outerWidth;
+  let bg_video = document.getElementById("bg_video");
+  if(width < 768) {
+    bg_video.controls = true;
+  }
+
   let ua = navigator.userAgent.toLowerCase();
   win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1) ? true : false;
 
