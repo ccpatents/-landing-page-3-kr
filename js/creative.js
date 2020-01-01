@@ -36,7 +36,7 @@ let bg_video = document.getElementById("bg_video");
         content: {
           title: 'CCPatents',
           description: '#특허 검색식 #완성 도우미',
-          imageUrl: 'https://kr.ccpatents.net/icon.png',
+          imageUrl: 'https://kr.ccpatents.net/icon_kakao.png',
           link: {
             mobileWebUrl: 'https://kr.ccpatents.net',
             webUrl: 'https://kr.ccpatents.net'
