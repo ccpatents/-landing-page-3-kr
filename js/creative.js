@@ -14,9 +14,17 @@ let win_10 = false;
 
   let width = window.outerWidth;
   let bg_video = document.getElementById("bg_video");
-  if(width < 768) {
+  if (width < 768) {
     bg_video.controls = true;
   }
+  /*window.addEventListener('resize', function () {
+    // 나중에 debounce 적용
+    let width = window.outerWidth;
+    let bg_video = document.getElementById("bg_video");
+    if (width < 768) {
+      bg_video.controls = true;
+    }
+  });*/
 
   let ua = navigator.userAgent.toLowerCase();
   win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1) ? true : false;
@@ -161,7 +169,7 @@ let win_10 = false;
     store_event = true;
   }
 
-  document.getElementById('download').onclick = function(ev) {
+  document.getElementById('download').onclick = function (ev) {
     document.getElementById('install-video').src += "&autoplay=1";
     ev.preventDefault();
 
@@ -174,7 +182,7 @@ let win_10 = false;
   }
 
   setTimeout(function () {
-    if(win_10) {
+    if (win_10) {
       gtag('event', 'timeout_10s_pc', {
         'event_category': 'timeout'
       });
@@ -182,7 +190,7 @@ let win_10 = false;
   }, 10000);
 
   setTimeout(function () {
-    if(win_10) {
+    if (win_10) {
       gtag('event', 'timeout_25s_pc', {
         'event_category': 'timeout'
       });
