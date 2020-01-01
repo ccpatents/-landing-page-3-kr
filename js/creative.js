@@ -9,22 +9,20 @@ let ps_selected = false; // '특허 검색 왜..?'
 
 let win_10 = false;
 
+let bg_video = document.getElementById("bg_video");
+
 (function ($) {
   "use strict"; // Start of use strict
 
-  let width = window.outerWidth;
-  let bg_video = document.getElementById("bg_video");
+  let width = window.innerWidth;
   if (width < 768) {
-    bg_video.controls = true;
+    video_controls_display(true);
   }
-  /*window.addEventListener('resize', function () {
+
+  window.addEventListener('resize', function () {
     // 나중에 debounce 적용
-    let width = window.outerWidth;
-    let bg_video = document.getElementById("bg_video");
-    if (width < 768) {
-      bg_video.controls = true;
-    }
-  });*/
+    resize_width();
+  });
 
   let ua = navigator.userAgent.toLowerCase();
   win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1) ? true : false;
@@ -222,4 +220,18 @@ async function WebShare() {
   } catch (error) {
     return;
   }
+}
+
+function resize_width() {
+  let width = window.innerWidth;
+  console.log(width);
+  if (width < 768) {
+    video_controls_display(true);
+  } else {
+    video_controls_display(false);
+  }
+}
+
+function video_controls_display(bool) {
+  bg_video.controls = bool;
 }
