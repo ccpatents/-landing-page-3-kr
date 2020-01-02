@@ -10887,13 +10887,13 @@ header.masthead {
 
 header.masthead h1 {
   font-size: 3rem;
-  text-shadow: 5px 3px 3px rgba(68, 68, 68, 0.75);
+  text-shadow: 5px 3px 3px #333333;
 }
 
 header.masthead h2 {
   font-weight: 800;
   font-size: 1.7rem;
-  text-shadow: 5px 3px 3px rgba(68, 68, 68, 0.75);
+  text-shadow: 5px 3px 3px #333333;
 }
 
 header.masthead p {
