@@ -251,7 +251,6 @@ let bg_video = document.getElementById("bg_video");
 
 function resize_width() {
   let width = window.innerWidth;
-  console.log(width);
   if (width < 768) {
     video_controls_display(true);
   } else {
