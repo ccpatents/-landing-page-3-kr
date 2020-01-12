@@ -115,7 +115,7 @@ header.masthead {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, #{fade-out($secondary, .7)} 0%, #{fade-out($secondary, .7)} 100%);
+    background-image: linear-gradient(to bottom, #{fade-out($secondary, .35)} 0%, #{fade-out($secondary, .55)} 100%);
     z-index: 1;
   }
 
