@@ -119,17 +119,10 @@ let bg_video = document.getElementById("bg_video");
     nav: false,
     animateOut: 'fadeOut',
     autoplay: true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 1750,
     autoplayHoverPause: true,
     mouseDrag: false,
     touchDrag: false,
-  })
-
-  $('.play').on('click', function () {
-    owl.trigger('play.owl.autoplay', [1000])
-  })
-  $('.stop').on('click', function () {
-    owl.trigger('stop.owl.autoplay')
   })
 
   //$('.popup-img').popupimg();
