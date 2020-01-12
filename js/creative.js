@@ -48,13 +48,12 @@ let bg_video = document.getElementById("bg_video");
           sharedCount: 845
         },
         buttons: [{
-            title: '웹으로 보기',
-            link: {
-              mobileWebUrl: 'https://kr.ccpatents.net',
-              webUrl: 'https://kr.ccpatents.net'
-            }
-          },
-        ]
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://kr.ccpatents.net',
+            webUrl: 'https://kr.ccpatents.net'
+          }
+        }, ]
       });
 
       //mobile
@@ -113,29 +112,25 @@ let bg_video = document.getElementById("bg_video");
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $('.carousel-posts').owlCarousel({
-    autoplay: false,
-    autoHeight: true,
-    center: false,
-    loop: false,
+  $('.owl-carousel').owlCarousel({
     items: 1,
-    margin: 30,
-    stagePadding: 0,
+    loop: true,
+    margin: 10,
     nav: false,
-    dots: true,
-    navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-    responsive: {
-      0: {
-        items: 2
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 4
-      }
-    }
-  });
+    animateOut: 'fadeOut',
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: true,
+    mouseDrag: false,
+    touchDrag: false,
+  })
+
+  $('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [1000])
+  })
+  $('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
+  })
 
   //$('.popup-img').popupimg();
 

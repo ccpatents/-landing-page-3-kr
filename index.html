@@ -56,8 +56,13 @@
   <!-- Plugin CSS -->
   <!--<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">-->
   <!--<link rel="stylesheet" href="css/grt-youtube-popup.min.css">-->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!--<link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.green.min.css" />
   <link rel="stylesheet" href="css/aos.css">
   <!--<link href="css/native-toast.min.css" rel="stylesheet">-->
 
@@ -115,9 +120,10 @@
         <div class="col-12 pt-md-5 mt-md-5 pt-lg-0 mt-lg-0">
           <img class="d-none d-md-block img-center mb-4 px-0" src="img/icon2.png" style="width: 65px;" />
           <h1 class="text-uppercase text-white font-weight-bold mb-4">Click Cl!ck Patents</h1>
-          <h2 class="mb-4">‘‘특허 검색식 완성 도우미’’</h2>
+          <h2 class="mb-4">특허 검색식 완성 도우미</h2>
           <div id="store-area1" class="mt-4 mb-3" style="display: none">
-            <a id="store-button1" href="ms-windows-store://pdp/?productid=9N798V33QDF8" style="display: inline-block;" data-aos="zoom-in">
+            <a id="store-button1" href="ms-windows-store://pdp/?productid=9N798V33QDF8" style="display: inline-block;"
+              data-aos="zoom-in">
               <div class="img-hover-container" style="width: 200px;">
                 <img
                   src="https://1.bp.blogspot.com/-OcTM0sQ-P3Q/Xf2BfsK5A0I/AAAAAAAAHl8/n0jqczizugQFFxLyr6VmVPC_qHaIzml9gCLcBGAsYHQ/s1600/store_ko.png"
@@ -155,12 +161,11 @@
     <div class="container-fluid py-5 bg-light" data-aos="fade-up">
       <div class="row d-flex align-items-center justify-content-center px-3">
         <div class="text-center">
-          <h2>‘‘괄호와 연산자를 신경쓸 필요가 없습니다.’’</h2>
-          <p>키워드를 입력하고, 키워드별 동의어를 입력하면 검색식이 자동으로 완성됩니다. 즉, <b>단어에만 집중</b>할 수 있습니다.</p>
-          <p><b>모든 단어는 태그 처리</b>되어 가독성이 좋아졌을 뿐만 아니라, <b>마우스 오른쪽 버튼으로 제거</b>할 수 있고, <b>왼쪽 버튼으로 수정</b>할 수 있습니다.</p>
-          <p>검색식도 직접 입력할 필요가 없고, '특허 검색' 버튼을 누르면, <b>자동으로 선택한 사이트로 이동하여 검색 결과를 표시</b>합니다.</p>
-          <p><b>키워드별로 검색할 필드를 지정</b>할 수 있고, 이것은 선택 즉시 검색식에 자동으로 반영됩니다.</p>
-          <p>검색 내용은 자동으로 저장되고, <b>각 기록에 대하여 평가하고 메모</b>할 수 있습니다. 또한 메인 화면에 복구할 수도 있습니다.</p>
+          <h2>‘‘특허 검색 결과가 너무 많나요?’’</h2>
+          <p>요약, 청구항 같은 <b>필드만 지정</b>해 주어도 <b>검색량을 확~ 줄일 수 있습니다.</b></p>
+          <p><b>동의어를 입력</b>해 주면 검색 <b>범위를 넓힐 수 있습니다.</b></p>
+          <p>동의어를 연결하고, 필드를 지정해 주는 것은 <b>상당히 피곤한 작업입니다.</b></p>
+          <p><b>CCPatents는 이 문제를 단순하게 해결했습니다.</b></p>
         </div>
       </div>
     </div>
@@ -168,14 +173,28 @@
 
   <!--Mechanism Section-->
   <section id="mechanism">
-    <div class="container-fluid py-5 px-3" data-aos="zoom-in">
-      <div class="row d-flex align-items-center justify-content-center px-0">
+    <div class="container py-5 px-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="owl-carousel">
+            <div class="item">
+              <img src="./img/mechanism/1.png" alt="patent search">
+            </div>
+            <div class="item">
+              <img src="./img/mechanism/2.png" alt="patent search">
+            </div>
+            <div class="item">
+              <img src="./img/mechanism/3.png" alt="patent search">
+            </div>
+            <div class="item">
+              <img src="./img/mechanism/4.png" alt="patent search">
+            </div>
+            <div class="item">
+              <img src="./img/mechanism/5.png" alt="patent search">
+            </div>
+          </div>  
+        </div>
         
-        <img class="col-12 col-lg-10 col-xl-9 px-0"
-            src="./img/mechanism.png"
-            alt="특허 검색 방법">
-      </div>
-    </div>
   </section>
 
   <!-- Features Section -->
@@ -464,7 +483,9 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
   <!--<script src="js/grt-youtube-popup.min.js"></script>-->
-  <script src="js/owl.carousel.min.js"></script>
+  <!--<script src="js/owl.carousel.min.js"></script>-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
   <script src="js/aos.js"></script>
   <script>
     AOS.init();
