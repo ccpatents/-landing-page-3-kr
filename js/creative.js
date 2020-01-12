@@ -120,7 +120,7 @@ let bg_video = document.getElementById("bg_video");
     animateOut: 'fadeOut',
     autoplay: true,
     autoplayTimeout: 1750,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     mouseDrag: false,
     touchDrag: false,
   })
