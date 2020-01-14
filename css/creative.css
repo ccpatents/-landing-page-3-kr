@@ -11187,12 +11187,14 @@ header.masthead .overlay {
 @media (max-width: 767.98px) {
   #solution h2 {
     font-size: 1.7rem;
+    font-weight: 600;
   }
 }
 
 @media (max-width: 991.98px) {
   #solution h2 {
     font-size: 1.7rem;
+    font-weight: 600;
   }
   #solution p {
     font-size: 1rem;

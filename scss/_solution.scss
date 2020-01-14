@@ -19,11 +19,13 @@
 	@include media-breakpoint-down(sm) {
 		h2 {
 			font-size: 1.7rem;
+			font-weight: 600;
 		}
 	}
 	@include media-breakpoint-down(md) {
 		h2 {
 			font-size: 1.7rem;
+			font-weight: 600;
 		}
 		p {
 			font-size: 1rem;
