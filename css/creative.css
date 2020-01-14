@@ -11184,17 +11184,10 @@ header.masthead .overlay {
   font-weight: 500;
 }
 
-@media (max-width: 767.98px) {
-  #solution h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-}
-
 @media (max-width: 991.98px) {
   #solution h2 {
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
   #solution p {
     font-size: 1rem;
