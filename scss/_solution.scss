@@ -1,10 +1,8 @@
-#mechanism {
-
-    word-break: keep-all;
+#solution {
+	word-break: keep-all;
 	color: $dark;
 
 	b {
-		background-color: $dark;
 		font-weight: bold;
 	}
 
@@ -15,6 +13,7 @@
 
 	p {
 		font-size: 1.1rem;
+		font-weight: 500;
 	}
 
 	@include media-breakpoint-down(sm) {
