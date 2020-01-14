@@ -133,7 +133,7 @@ header.masthead {
     }
 
     .overlay {
-      background: linear-gradient(to bottom, #{fade-out($secondary, .5)} 0%, #{fade-out($secondary, .5)} 100%), url('../img/m_bg6.jpg');
+      background: linear-gradient(to bottom, #{fade-out($secondary, .5)} 0%, #{fade-out($secondary, .5)} 100%), url('../img/m_bg.jpg');
       //background-image: url('../img/m_bg.jpg');
       background-position: center;
       background-repeat: no-repeat;
