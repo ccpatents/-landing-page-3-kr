@@ -11128,11 +11128,12 @@ header.masthead .overlay {
 }
 
 #install h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 #install p {
   font-size: 1.1rem;
+  margin-bottom: .3rem;
 }
 
 @media (max-width: 991.98px) {
