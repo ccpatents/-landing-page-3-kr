@@ -11123,43 +11123,22 @@ header.masthead .overlay {
 
 #install {
   overflow: hidden;
-  color: #454545;
+  color: #555555;
   word-break: keep-all;
 }
 
-#install h2,
-#install h3,
-#install h4 {
-  font-size: 2.5rem;
-  color: #555555;
+#install h2 {
+  font-size: 2rem;
 }
 
 #install p {
   font-size: 1.1rem;
-  color: #555555;
 }
 
-#install b {
-  color: #555555;
-  background-color: #ffd300;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-#install b1 {
-  color: #fff;
-  background-color: #328ff2;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-@media (max-width: 767.98px) {
-  #install p {
-    font-size: 1.1rem;
+@media (max-width: 991.98px) {
+  #install h2 {
+    font-size: 1.45rem;
   }
-}
-
-@media (max-width: 1199.98px) {
   #install p {
     font-size: 1rem;
   }
