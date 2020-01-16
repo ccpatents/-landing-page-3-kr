@@ -102,6 +102,21 @@ header.masthead {
     transform: translateX(-50%) translateY(-50%);
   }
 
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
   .container,
   .container-fluid {
     position: relative;
@@ -148,6 +163,13 @@ header.masthead {
       padding: 0 1.5rem;
       z-index: 5;
     }
+
+    .video {
+      position: relative;
+      margin-top: 7.5rem;
+      padding: 0 1.5rem;
+      z-index: 5;
+    }
   }
 
   @include media-breakpoint-up(lg) {
@@ -169,6 +191,13 @@ header.masthead {
     }
 
     video {
+      min-width: auto;
+      min-height: 100%;
+      width: auto;
+      height: 100%;
+    }
+
+    .video {
       min-width: auto;
       min-height: 100%;
       width: auto;
