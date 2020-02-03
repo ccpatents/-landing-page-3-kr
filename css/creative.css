@@ -10878,7 +10878,7 @@ hr.light {
 }
 
 header.masthead {
-  min-height: 60vh;
+  min-height: 70vh;
   padding-bottom: calc(10rem - 75px);
   position: relative;
   background-color: #fff;
@@ -11034,7 +11034,7 @@ header.masthead .overlay {
   }
   header.masthead .video {
     position: relative;
-    margin-top: 7.5rem;
+    margin-top: 15rem;
     padding: 0 1.5rem;
     z-index: 5;
   }
@@ -11042,7 +11042,7 @@ header.masthead .overlay {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 70vh;
+    height: 80vh;
     min-height: 40rem;
     padding-top: 75px;
     padding-bottom: 0;
@@ -11187,4 +11187,3 @@ header.masthead .overlay {
     font-size: 1rem;
   }
 }
-/*# sourceMappingURL=creative.css.map */
