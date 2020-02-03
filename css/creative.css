@@ -10975,6 +10975,19 @@ header.masthead video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+header.masthead .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: auto;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
 header.masthead .container,
 header.masthead .container-fluid {
   position: relative;
@@ -11019,6 +11032,12 @@ header.masthead .overlay {
     padding: 0 1.5rem;
     z-index: 5;
   }
+  header.masthead .video {
+    position: relative;
+    margin-top: 7.5rem;
+    padding: 0 1.5rem;
+    z-index: 5;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11037,11 +11056,8 @@ header.masthead .overlay {
   header.masthead h2 {
     font-size: 1.8rem;
   }
-  header.masthead video {
-    min-width: auto;
-    min-height: 100%;
-    width: auto;
-    height: 100%;
+  header.masthead .video {
+    padding: 0 4%;
   }
 }
 
