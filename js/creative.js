@@ -168,6 +168,7 @@ let bg_video = document.getElementById("bg_video");
       gtag('event', 'click_store', {
         'event_category': 'button'
       });
+      gtag_report_conversion();
     }
     store_event = true;
   }
@@ -226,3 +227,18 @@ let bg_video = document.getElementById("bg_video");
     return;
   }
 }*/
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-669913813/fr96CP3L9sEBENWluL8C',
+      'value': 500.0,
+      'currency': 'KRW',
+      'event_callback': callback
+  });
+  return false;
+}
