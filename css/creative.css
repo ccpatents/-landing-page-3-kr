@@ -11013,6 +11013,9 @@ header.masthead .overlay {
     background-size: cover;
     opacity: 1;
   }
+  header.masthead .youtube_video {
+    display: block !important;
+  }
   header.masthead video {
     display: none;
   }
