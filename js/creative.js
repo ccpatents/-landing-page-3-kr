@@ -47,7 +47,7 @@ let bg_video = document.getElementById("bg_video");
       });
 
       //mobile
-      document.getElementById("share-button").style.display = "inline-block";
+      document.getElementById("share").style.display = "inline-block";
       document.getElementById("store-area2").style.display = "none";
       document.getElementById("win10_warn").style.display = "block";
     } else {
@@ -137,6 +137,15 @@ let bg_video = document.getElementById("bg_video");
       share_event = true;
     }
   }*/
+
+  document.getElementById('share-button').onclick = function () {
+    if (!share_event) {
+      gtag('event', 'share', {
+        'event_category': 'button'
+      });
+    }
+    store_event = true;
+  }
 
   document.getElementById('store-button1').onclick = function () {
     let gtag_ignore = true;
