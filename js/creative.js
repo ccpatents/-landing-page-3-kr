@@ -144,7 +144,7 @@ let bg_video = document.getElementById("bg_video");
         'event_category': 'button'
       });
     }
-    store_event = true;
+    share_event = true;
   }
 
   document.getElementById('store-button1').onclick = function () {
