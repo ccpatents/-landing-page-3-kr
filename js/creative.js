@@ -138,14 +138,14 @@ let bg_video = document.getElementById("bg_video");
     }
   }*/
 
-  /*document.getElementById('share-button').onclick = function () {
+  document.getElementById('kakao-link-btn').onclick = function () {
     if (!share_event) {
       gtag('event', 'share', {
         'event_category': 'button'
       });
     }
     share_event = true;
-  }*/
+  }
 
   document.getElementById('store-button1').onclick = function () {
     let gtag_ignore = true;
