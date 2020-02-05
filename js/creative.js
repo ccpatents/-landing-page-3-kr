@@ -210,7 +210,7 @@ let bg_video = document.getElementById("bg_video");
   }, 25000);
 
   setTimeout(function () {
-    gtag('event', 'timeout_45s', {
+    gtag('event', 'timeout_45s_pc', {
       'event_category': 'timeout'
     });
   }, 45000);
