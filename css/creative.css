@@ -10928,18 +10928,6 @@ header.masthead .btn-red:hover {
   background-color: #df7c19;
 }
 
-header.masthead bw {
-  color: #f8f9fa;
-  font-weight: 500;
-  opacity: 0.85;
-}
-
-header.masthead b {
-  color: #fff;
-  background-color: #328ff2;
-  opacity: 0.85;
-}
-
 header.masthead span {
   font-size: 1.2rem;
 }
@@ -10992,6 +10980,24 @@ header.masthead .overlay {
   z-index: 1;
 }
 
+header.masthead .usecase-item {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 140, 186, 0.8)), to(rgba(0, 140, 186, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 140, 186, 0.8) 0%, rgba(0, 140, 186, 0.5) 100%);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 140, 186, 0.95)), to(rgba(0, 140, 186, 0.7)));
+  background-image: linear-gradient(to right, rgba(0, 140, 186, 0.95) 0%, rgba(0, 140, 186, 0.7) 100%);
+}
+
 @media (max-width: 767.98px) {
   header.masthead {
     padding-top: 6.5rem !important;
@@ -11014,7 +11020,7 @@ header.masthead .overlay {
     opacity: 1;
   }
   header.masthead .youtube_video {
-    display: block !important;
+    display: block;
   }
   header.masthead video {
     display: none;
