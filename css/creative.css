@@ -11023,7 +11023,7 @@ header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
     display: none;
   }
   header.masthead .usecase {
-    margin-top: 1rem;
+    margin: 1rem 1rem 0;
     position: static !important;
   }
 }
