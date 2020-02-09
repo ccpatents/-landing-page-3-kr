@@ -11019,9 +11019,6 @@ header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
     background-size: cover;
     opacity: 1;
   }
-  header.masthead .youtube_video {
-    display: block;
-  }
   header.masthead video {
     display: none;
   }
