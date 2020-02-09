@@ -150,6 +150,11 @@ header.masthead {
     video {
       display:none;
     }
+
+    .usecase {
+      margin-top: 1rem;
+      position: static !important;
+    }
   }
 
   @include media-breakpoint-up(lg) {

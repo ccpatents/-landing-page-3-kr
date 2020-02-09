@@ -11022,6 +11022,10 @@ header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
   header.masthead video {
     display: none;
   }
+  header.masthead .usecase {
+    margin-top: 1rem;
+    position: static !important;
+  }
 }
 
 @media (min-width: 992px) {
