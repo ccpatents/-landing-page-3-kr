@@ -10985,17 +10985,32 @@ header.masthead .usecase-item {
   text-decoration: none;
   display: block;
   padding: 10px 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 140, 186, 0.8)), to(rgba(0, 140, 186, 0.5)));
-  background-image: linear-gradient(to right, rgba(0, 140, 186, 0.8) 0%, rgba(0, 140, 186, 0.5) 100%);
   margin-bottom: 10px;
   cursor: pointer;
 }
 
-header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
+header.masthead .usecase-item-blue {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 140, 186, 0.8)), to(rgba(0, 140, 186, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 140, 186, 0.8) 0%, rgba(0, 140, 186, 0.5) 100%);
+}
+
+header.masthead .usecase-item-blue:focus, header.masthead .usecase-item-blue:hover {
   color: #ffffff;
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 140, 186, 0.95)), to(rgba(0, 140, 186, 0.7)));
   background-image: linear-gradient(to right, rgba(0, 140, 186, 0.95) 0%, rgba(0, 140, 186, 0.7) 100%);
+}
+
+header.masthead .usecase-item-red {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(247, 73, 73, 0.8)), to(rgba(247, 73, 73, 0.5)));
+  background-image: linear-gradient(to left, rgba(247, 73, 73, 0.8) 0%, rgba(247, 73, 73, 0.5) 100%);
+}
+
+header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(247, 73, 73, 0.95)), to(rgba(247, 73, 73, 0.7)));
+  background-image: linear-gradient(to left, rgba(247, 73, 73, 0.95) 0%, rgba(247, 73, 73, 0.7) 100%);
 }
 
 @media (max-width: 767.98px) {
@@ -11011,8 +11026,8 @@ header.masthead .usecase-item:focus, header.masthead .usecase-item:hover {
     font-size: 1.5rem;
   }
   header.masthead .overlay {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.45)), to(rgba(85, 85, 85, 0.15))), url("../img/m_bg.jpg");
-    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.45) 0%, rgba(85, 85, 85, 0.15) 100%), url("../img/m_bg.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.45)), to(rgba(85, 85, 85, 0.15))), url("../img/m_bg.png");
+    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.45) 0%, rgba(85, 85, 85, 0.15) 100%), url("../img/m_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
