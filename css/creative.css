@@ -11013,7 +11013,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   background-image: linear-gradient(to left, rgba(247, 73, 73, 0.95) 0%, rgba(247, 73, 73, 0.7) 100%);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   header.masthead {
     padding-top: 6.5rem !important;
     padding-bottom: 2rem;

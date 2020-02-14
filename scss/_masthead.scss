@@ -137,7 +137,7 @@ header.masthead {
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-top: 6.5rem !important;
     padding-bottom: 2rem;
 
