@@ -11176,30 +11176,30 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   }
 }
 
-#solution {
+#patent_search {
   word-break: keep-all;
   color: #555555;
 }
 
-#solution b {
+#patent_search b {
   font-weight: bold;
 }
 
-#solution h2 {
+#patent_search h2 {
   font-size: 2rem;
 }
 
-#solution p {
+#patent_search p {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
 @media (max-width: 991.98px) {
-  #solution h2 {
+  #patent_search h2 {
     font-size: 1.45rem;
     text-align: left !important;
   }
-  #solution p {
+  #patent_search p {
     font-size: 1rem;
   }
 }
@@ -11232,7 +11232,6 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 @media (max-width: 991.98px) {
   #manual h2 {
     font-size: 1.45rem;
-    text-align: left !important;
   }
   #manual h3 {
     color: #000000;
