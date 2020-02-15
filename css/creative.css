@@ -10896,6 +10896,10 @@ header.masthead h2 {
   font-size: 1.7rem;
 }
 
+header.masthead h3 {
+  font-size: 1.2rem;
+}
+
 header.masthead p {
   font-size: 0.95rem;
   padding-bottom: .5rem;
@@ -11024,6 +11028,9 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   }
   header.masthead h2 {
     font-size: 1.5rem;
+  }
+  header.masthead h3 {
+    font-size: 1,05rem;
   }
   header.masthead .overlay {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.45)), to(rgba(85, 85, 85, 0.15))), url("../img/m_bg.png");
@@ -11193,6 +11200,47 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
     text-align: left !important;
   }
   #solution p {
+    font-size: 1rem;
+  }
+}
+
+#manual {
+  word-break: keep-all;
+  color: #555555;
+}
+
+#manual b {
+  font-weight: bold;
+}
+
+#manual h2 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+#manual h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#manual p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+  #manual h2 {
+    font-size: 1.45rem;
+    text-align: left !important;
+  }
+  #manual h3 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: underline;
+  }
+  #manual p {
     font-size: 1rem;
   }
 }
