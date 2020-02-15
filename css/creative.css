@@ -11196,7 +11196,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 
 @media (max-width: 991.98px) {
   #patent_search h2 {
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     text-align: left !important;
   }
   #patent_search p {
@@ -11231,7 +11231,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 
 @media (max-width: 991.98px) {
   #manual h2 {
-    font-size: 1.45rem;
+    font-size: 1.75rem;
   }
   #manual h3 {
     color: #000000;
