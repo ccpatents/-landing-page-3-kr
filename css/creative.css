@@ -10566,7 +10566,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Gothic+A1', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .text-white-75 {
@@ -11227,6 +11227,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 #manual p {
   font-size: 1.1rem;
   font-weight: 500;
+  margin-bottom: 0.3rem;
 }
 
 @media (max-width: 991.98px) {
@@ -11243,3 +11244,4 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
     font-size: 1rem;
   }
 }
+/*# sourceMappingURL=creative.css.map */
