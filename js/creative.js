@@ -6,6 +6,8 @@ let semi_download_event = false;
 
 let win_10 = false;
 
+let scroll_timer;
+
 let bg_video = document.getElementById("bg_video");
 
 (function ($) {
@@ -84,20 +86,27 @@ let bg_video = document.getElementById("bg_video");
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    let scrolled = $("#mainNav").offset().top
-    if (scrolled > 100) {
-      $("#mainNav").addClass("navbar-scrolled");
-    } else {
-      $("#mainNav").removeClass("navbar-scrolled");
-    }
+    if(!scroll_timer) {
+      scroll_timer = setTimeout(function() {
+        scroll_timer = null;
+      },150)
 
-    if (scrolled > 999.9 && scroll_1000_event === false) {
-      gtag('event', 'scroll_1000', {
-        'event_category': 'scroll'
-      });
-      scroll_1000_event = true;
+      let scrolled = $("#mainNav").offset().top
+      if (scrolled > 100) {
+        $("#mainNav").addClass("navbar-scrolled");
+      } else {
+        $("#mainNav").removeClass("navbar-scrolled");
+      }
+
+      if (scrolled > 999.9 && scroll_1000_event === false) {
+        gtag('event', 'scroll_1000', {
+          'event_category': 'scroll'
+        });
+        scroll_1000_event = true;
+      }
     }
   };
+
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
