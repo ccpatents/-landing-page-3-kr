@@ -89,21 +89,20 @@ let bg_video = document.getElementById("bg_video");
     if(!scroll_timer) {
       scroll_timer = setTimeout(function() {
         scroll_timer = null;
-      },150)
+        let scrolled = $("#mainNav").offset().top
+        if (scrolled > 100) {
+          $("#mainNav").addClass("navbar-scrolled");
+        } else {
+          $("#mainNav").removeClass("navbar-scrolled");
+        }
 
-      let scrolled = $("#mainNav").offset().top
-      if (scrolled > 100) {
-        $("#mainNav").addClass("navbar-scrolled");
-      } else {
-        $("#mainNav").removeClass("navbar-scrolled");
-      }
-
-      if (scrolled > 999.9 && scroll_1000_event === false) {
-        gtag('event', 'scroll_1000', {
-          'event_category': 'scroll'
-        });
-        scroll_1000_event = true;
-      }
+        if (scrolled > 999.9 && scroll_1000_event === false) {
+          gtag('event', 'scroll_1000', {
+            'event_category': 'scroll'
+          });
+          scroll_1000_event = true;
+        s}
+      },250)
     }
   };
 
