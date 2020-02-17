@@ -84,13 +84,14 @@ let bg_video = document.getElementById("bg_video");
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if ($("#mainNav").offset().top > 100) {
+    let scrolled = $("#mainNav").offset().top
+    if (scrolled > 100) {
       $("#mainNav").addClass("navbar-scrolled");
     } else {
       $("#mainNav").removeClass("navbar-scrolled");
     }
 
-    if ($("#mainNav").offset().top > 999.9 && scroll_1000_event === false) {
+    if (scrolled > 999.9 && scroll_1000_event === false) {
       gtag('event', 'scroll_1000', {
         'event_category': 'scroll'
       });
