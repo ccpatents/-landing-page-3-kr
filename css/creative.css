@@ -11182,6 +11182,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 }
 
 #install h2 {
+  font-weight: bold;
   font-size: 1.7rem;
 }
 
