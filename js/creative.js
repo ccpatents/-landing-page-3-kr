@@ -102,7 +102,7 @@ let bg_video = document.getElementById("bg_video");
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $('.owl-carousel').owlCarousel({
+  /*$('.owl-carousel').owlCarousel({
     items: 1,
     loop: true,
     margin: 10,
@@ -113,9 +113,9 @@ let bg_video = document.getElementById("bg_video");
     autoplayHoverPause: false,
     mouseDrag: false,
     touchDrag: false,
-  })
+  })*/
 
-  //$('.popup-img').popupimg();
+  $('.popup-img').popupimg();
 
   //document.querySelector('#share').addEventListener('click', WebShare);
   /*document.getElementById('share').onclick = function () {
