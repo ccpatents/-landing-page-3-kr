@@ -10569,6 +10569,11 @@ html {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+b {
+  color: #000000;
+  font-weight: 600;
+}
+
 u {
   text-decoration: none;
   padding-bottom: 0px;
@@ -11096,7 +11101,6 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 #why {
   word-break: keep-all;
   color: #555555;
-  font-family: 'Gothic+A1', sans-serif;
 }
 
 #why h2 {
@@ -11200,17 +11204,14 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   color: #555555;
 }
 
-#patent_search b {
-  font-weight: bold;
-}
-
 #patent_search h2 {
+  font-weight: bold;
   font-size: 2rem;
 }
 
 #patent_search p {
-  font-size: 1.1rem;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991.98px) {
@@ -11228,12 +11229,9 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   color: #555555;
 }
 
-#manual b {
-  font-weight: bold;
-}
-
 #manual h2 {
   color: #000000;
+  font-weight: bold;
   font-size: 2rem;
 }
 
@@ -11261,4 +11259,3 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
     font-size: 1rem;
   }
 }
-/*# sourceMappingURL=creative.css.map */
