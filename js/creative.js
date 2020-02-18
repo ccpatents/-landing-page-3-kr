@@ -89,7 +89,8 @@ let bg_video = document.getElementById("bg_video");
     if(!scroll_timer) {
       scroll_timer = setTimeout(function() {
         scroll_timer = null;
-        let scrolled = $("#mainNav").offset().top
+        let scrolled = $("#mainNav").offset().top;
+        console.log(scrolled);
         if (scrolled > 100) {
           $("#mainNav").addClass("navbar-scrolled");
         } else {
@@ -102,6 +103,20 @@ let bg_video = document.getElementById("bg_video");
           });
           scroll_1000_event = true;
         s}
+
+        if(win_10) {
+          if (scrolled > 470 && scrolled < 3200) {
+            // 표시
+            $('#store-area3').fadeIn('slow')
+          } else {
+            // 제거
+            $('#store-area3').fadeOut('slow')
+          }
+        }
+
+        
+
+        
       },250)
     }
   };
@@ -183,6 +198,15 @@ let bg_video = document.getElementById("bg_video");
     }
 
     if (!store_event && !gtag_ignore) {
+      gtag('event', 'store', {
+        'event_category': 'button'
+      });
+    }
+    store_event = true;
+  }
+
+  document.getElementById('store-button3').onclick = function () {
+    if (!store_event) {
       gtag('event', 'store', {
         'event_category': 'button'
       });
