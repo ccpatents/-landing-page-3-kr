@@ -90,7 +90,6 @@ let bg_video = document.getElementById("bg_video");
       scroll_timer = setTimeout(function() {
         scroll_timer = null;
         let scrolled = $("#mainNav").offset().top;
-        console.log(scrolled);
         if (scrolled > 100) {
           $("#mainNav").addClass("navbar-scrolled");
         } else {
