@@ -101,7 +101,7 @@ let bg_video = document.getElementById("bg_video");
             'event_category': 'scroll'
           });
           scroll_1000_event = true;
-        s}
+        }
 
         if(win_10) {
           if (scrolled > 470 && scrolled < 3200) {
