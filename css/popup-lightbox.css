@@ -50,6 +50,7 @@
 	font-family: fantasy;
 	z-index: 101;
 	cursor: pointer;
+	outline: 0;
 }
 
 .lightbox .btn-close:hover {
