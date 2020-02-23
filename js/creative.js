@@ -66,7 +66,7 @@ let bg_video = document.getElementById("bg_video");
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
+          scrollTop: (target.offset().top - 75)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -86,10 +86,11 @@ let bg_video = document.getElementById("bg_video");
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if(!scroll_timer) {
-      scroll_timer = setTimeout(function() {
+    if (!scroll_timer) {
+      scroll_timer = setTimeout(function () {
         scroll_timer = null;
         let scrolled = $("#mainNav").offset().top;
+        let width = window.innerWidth;
         if (scrolled > 100) {
           $("#mainNav").addClass("navbar-scrolled");
         } else {
@@ -103,7 +104,7 @@ let bg_video = document.getElementById("bg_video");
           scroll_1000_event = true;
         }
 
-        if(win_10) {
+        if (win_10) {
           if (scrolled > 470 && scrolled < 3200) {
             // 표시
             $('#store-area3').fadeIn('slow')
@@ -113,10 +114,18 @@ let bg_video = document.getElementById("bg_video");
           }
         }
 
-        
+        if (scrolled > 1500 && scrolled < 3300 && width > 1000) {
+          // 표시
+          $('#addon-area').fadeIn('slow');
+        } else {
+          // 제거
+          $('#addon-area').fadeOut('slow');
+        }
 
-        
-      },250)
+
+
+
+      }, 250)
     }
   };
 
@@ -139,6 +148,10 @@ let bg_video = document.getElementById("bg_video");
   })*/
 
   $('.popup-img').popupimg();
+  $(".img-container").popupLightbox({
+    width: 1000,
+    height: 525,
+  });
 
   //document.querySelector('#share').addEventListener('click', WebShare);
   /*document.getElementById('share').onclick = function () {
