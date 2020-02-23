@@ -61,7 +61,7 @@
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	color: #fff;
+	color: rgb(73, 73, 73);
 	font-size: 14px;
 	z-index: 101;
 }
