@@ -49,7 +49,7 @@
 
 			$(closeBtn).addClass("btn-close")
 				.appendTo(popupWindow)
-				.html("×");
+				.html("\&times;");
 
 			$(imgStat).addClass("lightbox-status")
 				.appendTo(popupWindow);

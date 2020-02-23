@@ -113,7 +113,6 @@ let bg_video = document.getElementById("bg_video");
             $('#store-area3').fadeOut('slow')
           }
         }
-
         if (scrolled > 1500 && scrolled < 3300 && width > 1000) {
           // 표시
           $('#addon-area').fadeIn('slow');
@@ -121,10 +120,6 @@ let bg_video = document.getElementById("bg_video");
           // 제거
           $('#addon-area').fadeOut('slow');
         }
-
-
-
-
       }, 250)
     }
   };
@@ -149,8 +144,8 @@ let bg_video = document.getElementById("bg_video");
 
   $('.popup-img').popupimg();
   $(".img-container").popupLightbox({
-    width: 1000,
-    height: 525,
+    width: 1250,
+    height: 656
   });
 
   //document.querySelector('#share').addEventListener('click', WebShare);
