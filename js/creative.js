@@ -144,8 +144,8 @@ let bg_video = document.getElementById("bg_video");
 
   $('.popup-img').popupimg();
   $(".img-container").popupLightbox({
-    width: 1000,
-    height: 525
+    width: 1150,
+    height: 603
   });
 
   //document.querySelector('#share').addEventListener('click', WebShare);
