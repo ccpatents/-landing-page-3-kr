@@ -256,16 +256,6 @@ let bg_video = document.getElementById("bg_video");
   }, 45000);
 })(jQuery); // End of use strict
 
-function share_click() {
-  if (!share_event) {
-    gtag('event', 'share', {
-      'event_category': 'button'
-    });
-  }
-  share_event = true;
-}
-
-
 /*async function WebShare() {
   if (navigator.share === undefined) {
     return;
