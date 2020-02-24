@@ -97,8 +97,8 @@ let bg_video = document.getElementById("bg_video");
           $("#mainNav").removeClass("navbar-scrolled");
         }
 
-        if (scrolled > 999.9 && scroll_1000_event === false) {
-          gtag('event', 'scroll_1000', {
+        if (scrolled > 2000 && scroll_1000_event === false) {
+          gtag('event', 'scroll_2000', {
             'event_category': 'scroll'
           });
           scroll_1000_event = true;
