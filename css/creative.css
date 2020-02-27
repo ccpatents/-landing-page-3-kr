@@ -10688,8 +10688,8 @@ hr.light {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 }
 
@@ -10699,8 +10699,8 @@ hr.light {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 }
 
