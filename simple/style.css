@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.section {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 120%;
+    font-weight: 800;
+    position: relative;
+  }
+  
+  
+  #section1 {
+    height: 100vh;
+    background: #6699cc;
+  }
+  
+  #section2 {
+    height: 100vh;
+    background: #ff8c42;
+  }
