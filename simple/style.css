@@ -1,25 +1,98 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 .section {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 120%;
-    font-weight: 800;
-    position: relative;
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+#section1 {
+  height: 100vh;
+  background: #d2dde7;
+}
+
+#section2 {
+  height: 100vh;
+  background: rgb(255, 154, 87);
+}
+
+.text-wave-up {
+  -webkit-animation: up_mover 0.5s infinite alternate;
+  animation: up_mover 0.5s infinite alternate;
+}
+
+@-webkit-keyframes up_mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  
-  
-  #section1 {
-    height: 100vh;
-    background: #6699cc;
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
-  
-  #section2 {
-    height: 100vh;
-    background: #ff8c42;
+}
+
+@keyframes up_mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+.text-wave-down {
+  -webkit-animation: down_mover 0.5s infinite alternate;
+  animation: down_mover 0.5s infinite alternate;
+}
+
+@-webkit-keyframes down_mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes down_mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
