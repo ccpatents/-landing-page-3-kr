@@ -11271,6 +11271,15 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   margin-bottom: 0.3rem;
 }
 
+#manual .screen_border {
+  border: 1px solid #525151;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px #bdbdbd;
+          box-shadow: 5px 5px 5px #bdbdbd;
+  margin-bottom: 7px;
+}
+
 @media (max-width: 991.98px) {
   #manual h2 {
     font-size: 1.75rem;
@@ -11282,5 +11291,12 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   }
   #manual p {
     font-size: 1rem;
+  }
+  #manual .screen_border {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0px;
+    margin-bottom: 0px;
   }
 }
