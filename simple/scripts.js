@@ -140,7 +140,6 @@ function onYouTubeIframeAPIReady() {
 function onCCPatentsReady(event) {
     ccpatents_player = event.target;
     //ccpatents_player.playVideo();
-    ccpatents_player.stopVideo();
     ccpatents_player.seekTo(27);
     ccpatents_player.mute();
 }
