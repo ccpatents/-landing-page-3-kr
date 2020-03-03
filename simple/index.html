@@ -2,44 +2,78 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
-    <link href="html5-device-mockups/dist/device-mockups.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+	<title>CCPatents</title>
+
+	<meta name="description" content="특허 검색 솔루션 키프리스 완벽 지원">
+	<meta name="author" content="Joondong">
+
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <div style="position: absolute; top: 25px; left: 25px; width: 150px; z-index: 100;">
+	<div style="position: fixed; top: 25px; left: 25px; width: 150px; z-index: 100;">
         <a href="https://kr.ccpatents.net" style="cursor: pointer;">
           <img src="logo.png" width="100%">
         </a>
-    </div>
-    <section id="section1" class="section">
-        <div class="container">
-            <div style="margin-bottom: 15px;">
-                <h1>키프리스 + CCPatents</h1>
-                <h2>검색량 down 정확도 up</h2>
-            </div>
-            <div class="video-box">
-                <div class="video-container">
-                    <iframe width="100%" src="https://www.youtube.com/embed/lH-aHi7pb0I?start=27" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" donotallowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    </section>
-    <section id="section2" class="section">
-        <div class="container">
-            <div style="margin-bottom: 15px;">
-                <h1>마이크로소프트 스토어에서 빠르고 안전하게</h1>
-            </div>
-            <div class="video-box">
-                <div class="video-container">
-                    <iframe id="install-video" width="560" height="315" src="https://www.youtube.com/embed/6GLS2SxLgqI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+	</div>
+	
+	<div style="position: fixed; bottom: 25px; right: 40px; width: 200px; z-index: 100;">
+        <a href="#section2" class="scroll" style="cursor: pointer;" onclick="click_download()">
+          <img src="store_ko.png" width="100%">
+        </a>
+	</div>
+
+	<div id="sound" style="position: absolute; top: 25px; right: 40px; width: 60px; z-index: 100; cursor: pointer;">
+          <img id="speaker" src="mute.png" width="100%">
+	</div>
+	
+	<section id="section1" class="section bg-light">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-12" style="height: 10vh;"></div>
+				<h1 class="col-12">키프리스 + CCPatents</h1>
+				<h2 class="col-12 mb-5">정확도 up 검색량 down</h2>
+
+				<div class="col-1 col-md-2 col-lg-3"></div>
+				<div class="col-10 col-md-8 col-lg-6">
+					<div class="video-container">
+						<div id="ccpatents-video"></div>
+					</div>
+				</div>
+				<div class="col-1 col-md-2 col-lg-3"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section2" class="section">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-12" style="height: 10vh;"></div>
+				<h1 class="col-12">마이크로소프트 스토어에서 빠르고 안전하게</h1>
+				<h2 class="col-12 mb-5">로그인창 닫아도 설치됩니다.</h2>
+
+				<div class="col-1 col-md-2 col-lg-3"></div>
+				<div class="col-10 col-md-8 col-lg-6">
+					<div class="video-container">
+						<div id="install-video"></div>
+					</div>
+				</div>
+				<div class="col-1 col-md-2 col-lg-3"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts.min.js"></script>
 </body>
+
+</html>
