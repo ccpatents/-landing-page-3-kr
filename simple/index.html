@@ -3,13 +3,41 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="generator" content="JoonDong" />
+	<meta name="author" content="JoonDong" />
+	<meta name="keywords" content="ccpatents ccpatent 특허 키프리스">
+	<meta name="subject" content="키프리스 특허 검색식 자동 완성" />
+	<meta name="description"
+		content="특허 검색할 때 검색량이 너무 많아서 당황하신 경험이 있으신가요?. 해결책은 CCPatents입니다. CCPatents를 사용하면 정확도는 높이면서 검색량은 획기적으로 줄일 수 있습니다." />
+	<meta name="copyright" content="Copyright 2019. JoonDong. All rights reserved." />
+	<meta property="og:title" content="무료 특허 검색 솔루션" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kr.ccpatents.net" />
+	<meta property="og:image" content="https://kr.ccpatents.net/icon.png?v=1" />
+	<meta property="og:site_name" content="CCPatents" />
+	<meta property="og:description"
+		content="특허 검색할 때 검색량이 너무 많아서 당황하신 경험이 있으신가요?. 해결책은 CCPatents입니다. CCPatents를 사용하면 정확도는 높이면서 검색량은 획기적으로 줄일 수 있습니다." />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../img/ccpatents.ico" type="image/x-icon">
+	<link rel="icon" href="../img/ccpatents.ico" type="image/x-icon">
 
 	<title>CCPatents</title>
 
-	<meta name="description" content="특허 검색 솔루션 키프리스 완벽 지원">
-	<meta name="author" content="Joondong">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113551099-10"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-113551099-10');
+	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -20,27 +48,28 @@
 
 <body>
 	<div style="position: fixed; top: 25px; left: 25px; width: 150px; z-index: 100;">
-        <a href="https://kr.ccpatents.net" style="cursor: pointer;">
-          <img src="logo.png" width="100%">
-        </a>
-	</div>
-	
-	<div style="position: fixed; bottom: 25px; right: 40px; width: 200px; z-index: 100;">
-        <a href="#section2" class="scroll" style="cursor: pointer;" onclick="click_download()">
-          <img src="store_ko.png" width="100%">
-        </a>
+		<a href="https://kr.ccpatents.net">
+			<img src="logo.png" width="100%">
+		</a>
 	</div>
 
-	<div id="sound" style="position: absolute; top: 25px; right: 40px; width: 60px; z-index: 100; cursor: pointer;">
-          <img id="speaker" src="mute.png" width="100%">
+	<div style="position: fixed; bottom: 25px; right: 40px; width: 200px; z-index: 100;">
+		<a href="#section2" class="scroll" onclick="click_download()">
+			<img src="store_ko.png" width="100%">
+		</a>
 	</div>
-	
+
+	<div id="sound" style="position: absolute; top: 25px; right: 40px; width: 60px; z-index: 100;">
+		<img id="speaker" src="mute.png" width="100%">
+	</div>
+
 	<section id="section1" class="section bg-light">
 		<div class="container-fluid">
 			<div class="row text-center">
 				<div class="col-12" style="height: 10vh;"></div>
-				<h1 class="col-12">키프리스 + CCPatents</h1>
-				<h2 class="col-12 mb-5">정확도 up 검색량 down</h2>
+				<h1 id="_title" class="col-12">키프리스 + CCPatents</h1>
+				<h2 class="col-12 mb-5">정확도 <span style="color: rgb(28, 100, 255);">up</span> 검색량 <span
+						style="color: rgb(255, 83, 60);">down</span></h2>
 
 				<div class="col-1 col-md-2 col-lg-3"></div>
 				<div class="col-10 col-md-8 col-lg-6">
@@ -57,8 +86,8 @@
 		<div class="container-fluid">
 			<div class="row text-center">
 				<div class="col-12" style="height: 10vh;"></div>
-				<h1 class="col-12">마이크로소프트 스토어에서 빠르고 안전하게</h1>
-				<h2 class="col-12 mb-5">로그인창 닫아도 설치됩니다.</h2>
+				<h1 class="col-12">마이크로소프트 스토어에서 빠르고 <span style="color: rgb(28, 100, 255);">안전하게</span></h1>
+				<h2 class="col-12 mb-5"><span style="color: rgb(255, 83, 60);">로그인창 그냥 닫아도</span> 설치됩니다.</h2>
 
 				<div class="col-1 col-md-2 col-lg-3"></div>
 				<div class="col-10 col-md-8 col-lg-6">

@@ -3,7 +3,16 @@ var sound = false;
 var ccpatents_player;
 var install_player;
 
+var win_10 = false;
+
+var store_event = false;
+
 (function ($) {
+    "use strict"; // Start of use strict
+
+    var ua = navigator.userAgent.toLowerCase();
+    win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1) ? true : false;
+
     $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({
@@ -19,7 +28,7 @@ var install_player;
 
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);    
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var selector = ".section";
 
@@ -118,7 +127,7 @@ function onYouTubeIframeAPIReady() {
         }
     });
 
-    ccpatents_player = new YT.Player('install-video', {
+    install_player = new YT.Player('install-video', {
         width: '100%',
         videoId: '6GLS2SxLgqI',
         events: {
@@ -130,14 +139,14 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onCCPatentsReady(event) {
     ccpatents_player = event.target;
-    ccpatents_player.playVideo();
+    //ccpatents_player.playVideo();
     ccpatents_player.seekTo(27);
     ccpatents_player.mute();
-    
 }
 
 function onInstallReady(event) {
     install_player = event.target;
+    install_player.mute();
 }
 
 function click_download() {
@@ -145,7 +154,18 @@ function click_download() {
     install_player.stopVideo();
     install_player.playVideo();
 
-    setTimeout(function() {
-        window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
-    },2000)
+    if (win_10) {
+        if (!store_event) {
+            gtag('event', 'store', {
+                'event_category': 'button'
+            });
+        }
+        store_event = true;
+
+        setTimeout(function () {
+            window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
+        }, 3000)
+    } else {
+        alert("윈도우10에서만 설치할 수 있습니다.");
+    }
 }

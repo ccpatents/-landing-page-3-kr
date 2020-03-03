@@ -3,6 +3,10 @@ body {
     font-family: 'Sunflower';
 }
 
+img {
+    cursor: pointer;
+}
+
 section {
     min-height: 75vh;
 }
