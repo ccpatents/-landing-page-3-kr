@@ -100,6 +100,28 @@ var store_event = false;
             passive: false
         }
     );
+
+    setTimeout(function () {
+        if (win_10) {
+          gtag('event', 'timeout_10s_pc', {
+            'event_category': 'timeout'
+          });
+        }
+      }, 10000);
+    
+      setTimeout(function () {
+        if (win_10) {
+          gtag('event', 'timeout_25s_pc', {
+            'event_category': 'timeout'
+          });
+        }
+      }, 25000);
+    
+      setTimeout(function () {
+        gtag('event', 'timeout_45s', {
+          'event_category': 'timeout'
+        });
+      }, 45000);
 })(jQuery); // End of use strict
 
 function soundTurn(power) {
