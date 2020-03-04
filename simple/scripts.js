@@ -124,6 +124,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'hJuHVgCmoSw',
         events: {
             'onReady': onCCPatentsReady,
+            'onStateChange': onPlayerStateChange
         }
     });
 
@@ -132,6 +133,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '6GLS2SxLgqI',
         events: {
             'onReady': onInstallReady,
+            'onStateChange': onPlayerStateChange
         }
     });
 }
@@ -147,6 +149,12 @@ function onCCPatentsReady(event) {
 function onInstallReady(event) {
     install_player = event.target;
     install_player.mute();
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        event.target.stopVideo();
+    }
 }
 
 function click_download() {
